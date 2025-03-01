@@ -43,20 +43,18 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-
       .infoContainer {
         width: 100px;
         height: 100px;
         // border: solid 1px red;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start; 
-
+        justify-content: space-between;
+        align-items: flex-start;
 
         .infoOne {
           width: 100%;
-          height: auto; 
+          height: auto;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -69,30 +67,74 @@ body {
             color: $orange;
             text-transform: uppercase;
             white-space: nowrap;
-            font-size: 10px;
+            font-size: 13px;
             margin: 0px;
-            line-height: 1; 
+            line-height: 1;
             width: 100%;
           }
 
           .pronoun {
             font-family: $fontDunballLight;
             font-size: 8px;
-            line-height: 1; 
+            line-height: 1;
             margin: 0px;
-
           }
 
           .position {
             font-family: $fontDunballBold;
             font-size: 10px;
-            line-height: 1; 
+            line-height: 1;
             margin: 0px;
           }
         }
 
         .infoTwo {
-          // Aquí puedes agregar más estilos si necesitas
+          width: 100%;
+          height: 58px;
+          .phoneContainer,
+          .webContainer,
+          .mailContainer,
+          .ubiContainer {
+            height: 25%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+              width: 10px;
+            }
+            p {
+              font-family: Helvetica, Arial, sans-serif;
+              margin-left: 5px;
+            }
+            .phone {
+              font-size: 8px;
+              font-weight: 540;
+            }
+            .web {
+              font-size: 7px;
+              text-decoration: underline;
+              text-underline-offset: 1px;
+              font-weight: 540;
+            }
+            .mail {
+              font-size: 7px;
+              font-weight: 540;
+            }
+            .ubiTextContainer {
+              margin-left: 5px;
+              // border: solid 1px red;
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              p {
+                font-weight: 540;
+                font-size: 5.3px;
+                margin: 0px;
+              }
+            }
+          }
         }
       }
     }

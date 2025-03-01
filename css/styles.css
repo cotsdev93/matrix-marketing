@@ -57,7 +57,7 @@ body .signContainer .signTwo .infoContainer {
   height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 body .signContainer .signTwo .infoContainer .infoOne {
@@ -75,7 +75,7 @@ body .signContainer .signTwo .infoContainer .infoOne .title {
   color: #fb580c;
   text-transform: uppercase;
   white-space: nowrap;
-  font-size: 10px;
+  font-size: 13px;
   margin: 0px;
   line-height: 1;
   width: 100%;
@@ -90,6 +90,74 @@ body .signContainer .signTwo .infoContainer .infoOne .position {
   font-family: "dunballTallBold";
   font-size: 10px;
   line-height: 1;
+  margin: 0px;
+}
+body .signContainer .signTwo .infoContainer .infoTwo {
+  width: 100%;
+  height: 58px;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer {
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer img,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer img,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer img,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer img {
+  width: 10px;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer p,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer p,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer p,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer p {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 5px;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer .phone,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer .phone,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer .phone,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer .phone {
+  font-size: 8px;
+  font-weight: 540;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer .web,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer .web,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer .web,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer .web {
+  font-size: 7px;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  font-weight: 540;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer .mail,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer .mail,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer .mail,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer .mail {
+  font-size: 7px;
+  font-weight: 540;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer .ubiTextContainer,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer .ubiTextContainer,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer .ubiTextContainer,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer .ubiTextContainer {
+  margin-left: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .signContainer .signTwo .infoContainer .infoTwo .phoneContainer .ubiTextContainer p,
+body .signContainer .signTwo .infoContainer .infoTwo .webContainer .ubiTextContainer p,
+body .signContainer .signTwo .infoContainer .infoTwo .mailContainer .ubiTextContainer p,
+body .signContainer .signTwo .infoContainer .infoTwo .ubiContainer .ubiTextContainer p {
+  font-weight: 540;
+  font-size: 5.3px;
   margin: 0px;
 }
 
