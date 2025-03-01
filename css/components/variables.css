@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "dunballTallBold";
+  src: url("../assets/DunbarTall-Bold.ttf");
+}
+@font-face {
+  font-family: "duballLight";
+  src: url("../assets/DunbarText-Regular.ttf");
+}
+
+/*# sourceMappingURL=variables.css.map */
