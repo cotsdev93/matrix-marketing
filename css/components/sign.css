@@ -1,17 +1,157 @@
-/* Error: Undefined variable.
- *    ,
- * 37 |       background-color: $orange;
- *    |                         ^^^^^^^
- *    '
- *   scss\components\sign.scss 37:25  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 37 \2502        background-color: $orange;\d\a    \2502                          ^^^^^^^\a    \2575 \a   scss\\components\\sign.scss 37:25  root stylesheet";
+* {
+  box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "dunballTallBold";
+  src: url("../assets/DunbarTall-Bold.ttf");
+}
+@font-face {
+  font-family: "duballLight";
+  src: url("../assets/DunbarText-Regular.ttf");
+}
+.signContainer {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border: solid 0.5px gray;
+}
+.signContainer .signOne {
+  width: 115px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signContainer .signOne .logo {
+  width: 90px;
+}
+.signContainer .signOne .name {
+  width: 95px;
+}
+.signContainer .line {
+  width: 1.2px;
+  height: 100px;
+  background-color: #fb580c;
+}
+.signContainer .signTwo {
+  width: 134px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signContainer .signTwo .infoContainer {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.signContainer .signTwo .infoContainer .infoOne {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: -5px;
+}
+.signContainer .signTwo .infoContainer .infoOne .title {
+  width: 100%;
+  font-family: "dunballTallBold";
+  color: #fb580c;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 13px;
+  margin: 0px;
+  line-height: 1;
+  width: 100%;
+}
+.signContainer .signTwo .infoContainer .infoOne .pronoun {
+  font-family: "duballLight";
+  font-size: 8px;
+  line-height: 1;
+  margin: 0px;
+}
+.signContainer .signTwo .infoContainer .infoOne .position {
+  font-family: "dunballTallBold";
+  font-size: 10px;
+  line-height: 1;
+  margin: 0px;
+}
+.signContainer .signTwo .infoContainer .infoTwo {
+  width: 100%;
+  height: 58px;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer {
+  height: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer img,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer img,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer img,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer img {
+  width: 10px;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer p,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer p,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer p,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer p {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 5px;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer .phone,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer .phone,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer .phone,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer .phone {
+  font-size: 8px;
+  font-weight: 540;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer .web,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer .web,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer .web,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer .web {
+  font-size: 7px;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  font-weight: 540;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer .mail,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer .mail,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer .mail,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer .mail {
+  font-size: 7px;
+  font-weight: 540;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer .ubiTextContainer,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer .ubiTextContainer,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer .ubiTextContainer,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer .ubiTextContainer {
+  margin-left: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer .ubiTextContainer p,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer .ubiTextContainer p,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer .ubiTextContainer p,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer .ubiTextContainer p {
+  font-weight: 540;
+  font-size: 5.3px;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=sign.css.map */
