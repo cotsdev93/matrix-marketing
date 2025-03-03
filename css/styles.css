@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   border: solid 0.5px gray;
+  background: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%);
 }
 .signContainer .signOne {
   width: 115px;
@@ -62,7 +63,12 @@
   align-items: flex-start;
   gap: -5px;
 }
-.signContainer .signTwo .infoContainer .infoOne .title {
+.signContainer .signTwo .infoContainer .infoOne .titleContainer {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.signContainer .signTwo .infoContainer .infoOne .titleContainer .title {
   width: 100%;
   font-family: "dunballTallBold";
   color: #fb580c;
@@ -72,18 +78,32 @@
   margin: 0px;
   line-height: 1;
   width: 100%;
+  transform: translateY(-20px);
+  transition: all 1s;
 }
-.signContainer .signTwo .infoContainer .infoOne .pronoun {
+.signContainer .signTwo .infoContainer .infoOne .pronounContainer {
+  height: auto;
+  overflow: hidden;
+}
+.signContainer .signTwo .infoContainer .infoOne .pronounContainer .pronoun {
   font-family: "duballLight";
   font-size: 8px;
   line-height: 1;
   margin: 0px;
+  transform: translateY(-20px);
+  transition: all 1s;
 }
-.signContainer .signTwo .infoContainer .infoOne .position {
+.signContainer .signTwo .infoContainer .infoOne .positionContainer {
+  height: auto;
+  overflow: hidden;
+}
+.signContainer .signTwo .infoContainer .infoOne .positionContainer .position {
   font-family: "dunballTallBold";
   font-size: 10px;
   line-height: 1;
   margin: 0px;
+  transform: translateY(-20px);
+  transition: all 1s;
 }
 .signContainer .signTwo .infoContainer .infoTwo {
   width: 100%;
@@ -98,11 +118,12 @@
   justify-content: flex-start;
   align-items: center;
 }
-.signContainer .signTwo .infoContainer .infoTwo .phoneContainer img,
-.signContainer .signTwo .infoContainer .infoTwo .webContainer img,
-.signContainer .signTwo .infoContainer .infoTwo .mailContainer img,
-.signContainer .signTwo .infoContainer .infoTwo .ubiContainer img {
-  width: 10px;
+.signContainer .signTwo .infoContainer .infoTwo .phoneContainer .icon,
+.signContainer .signTwo .infoContainer .infoTwo .webContainer .icon,
+.signContainer .signTwo .infoContainer .infoTwo .mailContainer .icon,
+.signContainer .signTwo .infoContainer .infoTwo .ubiContainer .icon {
+  opacity: 0;
+  transition: all 1s;
 }
 .signContainer .signTwo .infoContainer .infoTwo .phoneContainer p,
 .signContainer .signTwo .infoContainer .infoTwo .webContainer p,
