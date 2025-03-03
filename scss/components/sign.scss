@@ -15,157 +15,184 @@ $fontDunballLight: "duballLight";
   font-family: $fontDunballLight;
   src: url("../assets/DunbarText-Regular.ttf");
 }
-
-.signContainer {
-  width: 250px;
-  height: 150px;
-  border-radius: 5px;
-  background-color: white;
+.container {
+  width: 100%;
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  border: solid 0.5px gray;
-  background: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%);
-  .signOne {
-    width: 115px;
-    height: 100%;
+  gap: 10px;
+  .signContainer {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    .logo {
-      width: 90px;
-    }
-
-    .name {
-      width: 95px;
-    }
-  }
-
-  .line {
-    width: 1.2px;
-    height: 100px;
-    background-color: $orange;
-  }
-
-  .signTwo {
-    width: 134px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .infoContainer {
-      width: 100px;
-      height: 100px;
-      // border: solid 1px red;
+    border: solid 0.5px gray;
+    background: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%);
+    .signOne {
+      width: 115px;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
 
-      .infoOne {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: -5px;
-        // border: solid 1px red;
-        .titleContainer {
-          // border: solid 1px orange;
-          width: 100%;
-          height: auto;
-          overflow: hidden;
-          .title {
-            width: 100%;
-            font-family: $fontDunballBold;
-            color: $orange;
-            text-transform: uppercase;
-            white-space: nowrap;
-            font-size: 13px;
-            margin: 0px;
-            line-height: 1;
-            width: 100%;
-            transform: translateY(-20px);
-            transition: all 1s;
-          }
-        }
-        .pronounContainer {
-          height: auto;
-          overflow: hidden;
-          .pronoun {
-            font-family: $fontDunballLight;
-            font-size: 8px;
-            line-height: 1;
-            margin: 0px;
-            transform: translateY(-20px);
-            transition: all 1s;
-          }
-        }
-        .positionContainer {
-          height: auto;
-          overflow: hidden;
-          .position {
-            font-family: $fontDunballBold;
-            font-size: 10px;
-            line-height: 1;
-            margin: 0px;
-            transform: translateY(-20px);
-            transition: all 1s;
-          }
-        }
+      .logo {
+        width: 90px;
       }
 
-      .infoTwo {
-        width: 100%;
-        height: 58px;
-        .phoneContainer,
-        .webContainer,
-        .mailContainer,
-        .ubiContainer {
-          height: 25%;
+      .name {
+        width: 95px;
+      }
+    }
+
+    .line {
+      width: 1.2px;
+      height: 100px;
+      background-color: $orange;
+    }
+
+    .signTwo {
+      width: 134px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .infoContainer {
+        width: 100px;
+        height: 100px;
+        // border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .infoOne {
+          width: 100%;
+          height: auto;
           display: flex;
+          flex-direction: column;
           justify-content: flex-start;
-          align-items: center;
-          .icon {
-            opacity: 0;
-            transition: all 1s;
-          }
-          p {
-            font-family: Helvetica, Arial, sans-serif;
-            margin-left: 5px;
-          }
-          .phone {
-            font-size: 8px;
-            font-weight: 540;
-          }
-          .web {
-            font-size: 7px;
-            text-decoration: underline;
-            text-underline-offset: 1px;
-            font-weight: 540;
-          }
-          .mail {
-            font-size: 7px;
-            font-weight: 540;
-          }
-          .ubiTextContainer {
-            margin-left: 5px;
-            // border: solid 1px red;
-            height: 100%;
+          align-items: flex-start;
+          gap: -5px;
+          // border: solid 1px red;
+          .titleContainer {
+            // border: solid 1px orange;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            p {
-              font-weight: 540;
-              font-size: 5.3px;
+            height: auto;
+            overflow: hidden;
+            .title {
+              width: 100%;
+              font-family: $fontDunballBold;
+              color: $orange;
+              text-transform: uppercase;
+              white-space: nowrap;
+              font-size: 13px;
               margin: 0px;
+              line-height: 1;
+              width: 100%;
+              transform: translateY(-20px);
+              transition: all 1s;
+            }
+          }
+          .pronounContainer {
+            height: auto;
+            overflow: hidden;
+            .pronoun {
+              font-family: $fontDunballLight;
+              font-size: 8px;
+              line-height: 1;
+              margin: 0px;
+              transform: translateY(-20px);
+              transition: all 1s;
+            }
+          }
+          .positionContainer {
+            height: auto;
+            overflow: hidden;
+            .position {
+              font-family: $fontDunballBold;
+              font-size: 10px;
+              line-height: 1;
+              margin: 0px;
+              transform: translateY(-20px);
+              transition: all 1s;
+            }
+          }
+        }
+
+        .infoTwo {
+          width: 100%;
+          height: 58px;
+          .phoneContainer,
+          .webContainer,
+          .mailContainer,
+          .ubiContainer {
+            height: 25%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .icon {
+              opacity: 0;
+              transition: all 1s;
+            }
+            p {
+              font-family: Helvetica, Arial, sans-serif;
+              margin-left: 5px;
+            }
+            .phone {
+              font-size: 8px;
+              font-weight: 540;
+            }
+            .web {
+              font-size: 7px;
+              text-decoration: underline;
+              text-underline-offset: 1px;
+              font-weight: 540;
+            }
+            .mail {
+              font-size: 7px;
+              font-weight: 540;
+            }
+            .ubiTextContainer {
+              margin-left: 5px;
+              // border: solid 1px red;
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              p {
+                font-weight: 540;
+                font-size: 5.3px;
+                margin: 0px;
+              }
             }
           }
         }
       }
+    }
+  }
+  button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 1px gray;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      background-color: rgb(122, 122, 122);
+      color: white;
+      border: solid 1px rgb(56, 56, 56);
+    }
+    i {
+      transform: translateX(1px);
     }
   }
 }
